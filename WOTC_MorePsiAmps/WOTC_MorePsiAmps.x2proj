@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>c3b3efe4-4700-4ffc-a653-14edbe56278a</Guid>
+    <Name>WOTC_MorePsiAmps</Name>
+    <Description>A version of ObelixDks/Team CX No More Psi Amps.. that ADDS them instead of overrides Psi Amps</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WOTC_MorePsiAmps</AssemblyName>
+    <RootNamespace>WOTC_MorePsiAmps</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Content" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\WOTC_MorePsiAmps\" />
+    <Folder Include="Src\WOTC_MorePsiAmps\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComGameData_WeaponData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComInfiltration.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComStrategyTuning.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\More_PsiAmps.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\WOTC_MorePsiAmps\Classes\X2DownloadableContentInfo_WOTC_MorePsiAmps.uc" />
+    <Content Include="Src\WOTC_MorePsiAmps\Classes\X2Item_MorePsiAmps.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
